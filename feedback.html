@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Feedback</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <h2 class="logo">Convo</h2>
+
+    <ul>
+
+        <li>
+            <a href="dashboard.html">🏠 Dashboard</a>
+        </li>
+
+        <li class="active">
+            <a href="myfeedback.html">💬 My Feedback</a>
+        </li>
+
+        <li>
+            <a href="profile.html">👤 Profile</a>
+        </li>
+
+        <li>
+            <a href="login.html">🚪 Logout</a>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="content">
+
+    <h1>My Feedback</h1>
+
+    <div class="card">
+        <h3>★★★★★</h3>
+        <p>You are very helpful.</p>
+    </div>
+
+    <div class="card">
+        <h3>★★★★☆</h3>
+        <p>Improve communication skills.</p>
+    </div>
+
+    <div class="card">
+        <h3>★★★★★</h3>
+        <p>Excellent teamwork.</p>
+    </div>
+
+</div>
+<h2>Give Feedback</h2>
+
+<textarea
+    id="feedbackText"
+    rows="8"
+    cols="50"
+    placeholder="Write your feedback..."
+></textarea>
+<button type="button" onclick="submitFeedback()">
+    Send Feedback
+</button>
+
+<script type="module" src="feedback.js"></script>
+
+</body>
+</html>

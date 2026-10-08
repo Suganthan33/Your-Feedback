@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <h2 class="logo">Convo</h2>
+
+    <ul>
+
+        <li class="active">
+            <a href="dashboard.html">🏠 Dashboard</a>
+        </li>
+
+        <li>
+            <a href="myfeedback.html">💬 My Feedback</a>
+        </li>
+
+        <li>
+            <a href="profile.html">👤 Profile</a>
+        </li>
+
+        <li>
+            <a href="login.html">🚪 Logout</a>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="content">
+
+    <h1>Welcome to Convo Dashboard</h1>
+
+    <div class="card">
+
+        <h2>Your Feedback Link</h2>
+
+        <input
+    type="text"
+    id="link"
+    readonly>
+
+        <button onclick="copyLink()">Copy Link</button>
+
+    </div>
+
+   <div class="card">
+
+    <h2>Recent Feedback</h2>
+
+    <ul id="recentFeedback"></ul>
+
+</div>
+
+<script type="module" src="dashboard.js"></script>
+
+</body>
+</html>
